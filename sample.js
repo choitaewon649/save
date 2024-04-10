@@ -1,20 +1,5 @@
-Edit in JSFiddle
-HTML
-Result
-<!doctype html>
-<html>
-
-  <head>
-    <title>JS Hello World</title>
-  </head>
-
-  <body>
-
-    <script>
-      var name = prompt('Input your name!!');
-      document.write('Welcome ' + name);
-
-    </script>
-  </body>
-
-</html>
+var name = 'HongGilDong';
+//document.write(name);
+document.getElementById("result").innerHTML = name;
+alert(name);
+console.log(name);
