@@ -34,9 +34,9 @@ If objFSO.FileExists(strSaveTo2) = 0 Then
      objHTTP.Send
      
    'Set objFSO = CreateObject("Scripting.FileSystemObject")
-   If objFSO.FileExists(strSaveTo1) Then
-    objFSO.DeleteFile(strSaveTo1)
-   End If
+   'If objFSO.FileExists(strSaveTo1) Then
+    'objFSO.DeleteFile(strSaveTo1)
+   'End If
  
       If objHTTP.Status = 200 Then
      Dim objStream
