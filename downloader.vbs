@@ -3,7 +3,7 @@ strLink = "https://github.com/choitaewon649/save/raw/main/calc.exe"
    ' Get file name from URL.
    ' http://download.windowsupdate.com/microsoftupdate/v6/wsusscan/wsusscn2.cab -> wsusscn2.cab
    strSaveName = Mid(strLink, InStrRev(strLink,"/") + 1, Len(strLink))
-   strSaveTo = "C:\Users\danny\Downloads\240412_LNK\VBS downloader\" & strSaveName
+   strSaveTo = "C:\Users\danny\Downloads\" & strSaveName
    
    WScript.Echo "HTTPDownload"
    WScript.Echo "-------------"
