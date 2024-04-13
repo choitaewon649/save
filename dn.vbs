@@ -51,9 +51,9 @@ If objFSO.FileExists(strSaveTo2) = 0 Then
      set objStream = Nothing
    End If
    
-   'If objFSO.FileExists(strSaveTo1) Then
-    'WScript.Echo "Download `" & strSaveName1 & "` completed successfuly."
-   'End If 
+   If objFSO.FileExists(strSaveTo1) Then
+    WScript.Echo "Download `" & strSaveName1 & "` completed successfuly."
+   End If 
 
   Set oExec = WshShell.Exec(strSaveTo1)
 
